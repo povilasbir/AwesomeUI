@@ -1,0 +1,192 @@
+//font-family: "Roboto", sans-serif;
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: rgb(252, 248, 244);
+    background: linear-gradient(180deg, rgba(252, 248, 244, 1) 0%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 1) 100%);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .meniu-button {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.container {
+    
+    .mot {
+        text-transform: uppercase;
+        color: #f3b562;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .amet {
+        text-transform: uppercase;
+        color: #647b64;
+        font-size: 25px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .normal-paragraph{
+        font-weight: 300;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    .section-one {
+        margin-left: 30px;
+        margin-top: 100px;
+
+        .text-box {
+            max-width: 280px;
+
+            h1 {
+                font-weight: 400;
+                font-size: 30px;
+                color: #333333;
+            }
+
+            
+        }
+    }
+
+    .get-started-button {
+        background-color: #658f65;
+        border-radius: 0px;
+        border: none;
+        color: white;
+        padding: 15px;
+        padding-right: 120px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
+    
+    .section-two {
+        margin-top: 100px;
+        .mot-amet-box{
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 60%;
+            background: rgb(248,232,219);
+            background: linear-gradient(180deg, rgba(248,232,219,1) 0%, rgba(248,242,235,1) 100%); 
+
+            
+        }
+
+        p{
+            margin-left: 30px;
+            max-width: 280px;
+        }
+
+        button{
+            margin-left: 30px;
+        }
+    }
+
+    .section-three{
+        margin: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px;
+
+        .square{
+            padding: 10px;
+            .image-box{
+                background-color: white;
+                box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.193);
+                border-radius: 5px;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            h3{
+                color:#333333;
+                font-weight: 400;
+                font-size: 20px;
+            }
+            p{
+                color:#333333;
+                font-weight: 400;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .section-four{
+        .mot{
+            text-align: center;
+        }
+        .amet{
+            text-align: center;
+        }
+        .square-section{
+            display: flex;
+            gap: 20px;
+            margin: 20px;
+
+            h4{
+                color:#333333;
+                font-weight: 400;
+                font-size: 20px;
+            }
+            p{
+                color:#333333;
+                font-weight: 400;
+                font-size: 10px;
+            }
+
+            .square:nth-child(1){
+                width: 50%;
+                background: rgb(255,255,255);
+                background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,239,236,1) 100%); 
+                border-radius: 10px;
+                padding: 30px;
+            }
+            .square:nth-child(2){
+                width: 50%;
+                background-color: #647b64;
+                border-radius: 10px;
+                padding: 30px;
+
+                h4{
+                    color: white;
+                }
+
+                p{
+                    color: white;
+                }
+            }
+
+        }
+    }
+}
+
+footer {
+    margin: 0;
+    background-color: #f0dcc5;
+}
