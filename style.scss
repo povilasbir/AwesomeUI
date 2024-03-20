@@ -1,4 +1,6 @@
-//font-family: "Roboto", sans-serif;
+$deep-green: #647b64;
+$mid-green: #658f65;
+$deep-gray: #333333;
 
 body {
     font-family: "Roboto", sans-serif;
@@ -23,7 +25,7 @@ header {
 }
 
 .container {
-    
+
     .mot {
         text-transform: uppercase;
         color: #f3b562;
@@ -35,16 +37,16 @@ header {
 
     .amet {
         text-transform: uppercase;
-        color: #647b64;
+        color: $deep-green;
         font-size: 25px;
         font-weight: 400;
         margin: 0;
     }
 
-    .normal-paragraph{
+    .normal-paragraph {
         font-weight: 300;
         font-size: 14px;
-        color: #333333;
+        color: $deep-gray;
     }
 
     .section-one {
@@ -57,15 +59,15 @@ header {
             h1 {
                 font-weight: 400;
                 font-size: 30px;
-                color: #333333;
+                color: $deep-gray;
             }
 
-            
+
         }
     }
 
     .get-started-button {
-        background-color: #658f65;
+        background-color: $mid-green;
         border-radius: 0px;
         border: none;
         color: white;
@@ -77,40 +79,42 @@ header {
         letter-spacing: 1.5px;
     }
 
-    
+
     .section-two {
         margin-top: 100px;
-        .mot-amet-box{
+
+        .mot-amet-box {
             padding-left: 30px;
             padding-top: 10px;
             padding-bottom: 10px;
             width: 60%;
-            background: rgb(248,232,219);
-            background: linear-gradient(180deg, rgba(248,232,219,1) 0%, rgba(248,242,235,1) 100%); 
+            background: rgb(248, 232, 219);
+            background: linear-gradient(180deg, rgba(248, 232, 219, 1) 0%, rgba(248, 242, 235, 1) 100%);
 
-            
+
         }
 
-        p{
+        p {
             margin-left: 30px;
             max-width: 280px;
         }
 
-        button{
+        button {
             margin-left: 30px;
         }
     }
 
-    .section-three{
+    .section-three {
         margin: 30px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 25px;
 
-        .square{
+        .square {
             padding: 10px;
-            .image-box{
+
+            .image-box {
                 background-color: white;
                 box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.193);
                 border-radius: 5px;
@@ -119,73 +123,80 @@ header {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img{
+
+                img {
                     width: 20px;
                     height: 20px;
                 }
             }
-            h3{
-                color:#333333;
+
+            h3 {
+                color: $deep-gray;
                 font-weight: 400;
                 font-size: 20px;
             }
-            p{
-                color:#333333;
+
+            p {
+                color: $deep-gray;
                 font-weight: 400;
                 font-size: 10px;
             }
         }
     }
 
-    .section-four{
-        .mot{
+    .section-four {
+        .mot {
             text-align: center;
         }
-        .amet{
+
+        .amet {
             text-align: center;
         }
-        .square-section{
+
+        .square-section {
             display: flex;
             gap: 20px;
             margin: 20px;
 
-            img{
+            img {
                 margin-bottom: 5px;
             }
 
-            h4{
-                color:#333333;
+            h4 {
+                color: $deep-gray;
                 font-weight: 400;
                 font-size: 15px;
                 margin: 0;
                 margin-bottom: 5px;
             }
-            p{
-                color:#333333;
+
+            p {
+                color: $deep-gray;
                 font-weight: 400;
                 font-size: 10px;
                 margin: 0;
                 margin-bottom: 5px;
             }
 
-            .square:nth-child(1){
+            .square:nth-child(1) {
                 width: 50%;
-                background: rgb(255,255,255);
-                background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,239,236,1) 100%); 
+                background: rgb(255, 255, 255);
+                background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(236, 239, 236, 1) 100%);
                 border-radius: 10px;
                 padding: 30px;
             }
-            .square:nth-child(2){
+
+            .square:nth-child(2) {
                 width: 50%;
-                background-color: #647b64;
+                background-color: $deep-green;
                 border-radius: 10px;
                 padding: 30px;
 
-                h4{
+                h4 {
                     color: white;
                 }
 
-                p{
+                p {
                     color: white;
                 }
             }
@@ -193,32 +204,104 @@ header {
         }
     }
 
-    .section-five{
+    .section-five {
         margin-top: 100px;
         margin-left: 60px;
         max-width: 300px;
     }
 
-    .section-six{
+    .section-six {
         margin-top: 100px;
         margin-left: 30px;
 
-        .photo-card{
+        .photo-card {
             width: 80%;
             border-radius: 15px;
-            // background-color: red;
-            .photo-text-box{
+
+            .photo-text-box {
                 height: 200px;
             }
-            
-            p{
-                
-            }
+
+            p {}
         }
     }
 }
 
 footer {
-    margin: 0;
+    padding: 30px;
     background-color: #f0dcc5;
+    font-family: "Roboto", sans-serif;
+    color: $deep-gray;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    img {
+        width: 180px;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    span {}
+
+    .social {
+        display: flex;
+        gap: 15px;
+
+        .social-icon {
+            width: 40px;
+        }
+    }
+
+    .lists-wrap {
+        display: flex;
+        justify-content: start;
+        gap: 40px;
+
+        .footer-list {
+            h2 {
+                font-weight: 400;
+                color: $deep-green;
+            }
+
+            span {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .message-box {
+        h2 {
+            font-weight: 500;
+            color: $deep-green;
+        }
+
+        input {
+            width: 90%;
+            border: none;
+            padding: 10px;
+            padding-bottom: 80px;
+        }
+
+        .send-message {
+
+            width: 320px;
+            height: 50px;
+            margin-top: 20px;
+            border: none;
+            background-color: $mid-green;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: left;
+            padding-left: 20px;
+            font-size: 13px;
+        }
+    }
 }
