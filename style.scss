@@ -1,6 +1,7 @@
 $deep-green: #647b64;
 $mid-green: #658f65;
 $deep-gray: #333333;
+$mid-gray: rgb(104, 102, 102);
 
 body {
     font-family: "Roboto", sans-serif;
@@ -142,6 +143,16 @@ header {
                 font-size: 10px;
             }
         }
+
+        .square:nth-child(1) {
+            .image-box {
+                background-color: $deep-green;
+            }
+
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgb(245, 245, 245)
+        }
     }
 
     .section-four {
@@ -216,13 +227,26 @@ header {
 
         .photo-card {
             width: 80%;
-            border-radius: 15px;
 
-            .photo-text-box {
-                height: 200px;
+            .model-photo {
+                background-image: url(images/profile-three.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                .photo-text-box {
+                    height: 200px;
+                }
             }
 
-            p {}
+            p {
+                padding: 15px;
+                font-size: 14px;
+                font-style: italic;
+                color: $mid-gray;
+                border-radius: 0 0 15px 15px;
+                background: rgb(255, 255, 255);
+                background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(236, 239, 236, 1) 100%);
+            }
         }
     }
 }
